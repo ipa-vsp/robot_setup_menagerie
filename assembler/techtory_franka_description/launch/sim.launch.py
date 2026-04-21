@@ -139,7 +139,7 @@ def launch_setup(context, *args, **kwargs):
 
     # Spawn controllers for all modes that have a running controller manager
     if sim_type in ("real", "isaac_sim", "gazebo"):
-        for controller in ["joint_state_broadcaster", "arm_controller"]:
+        for controller in ["joint_state_broadcaster", "arm_controller", "hand_controller"]:
             nodes.append(
                 Node(
                     package="controller_manager",

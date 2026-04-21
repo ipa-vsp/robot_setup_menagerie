@@ -1,0 +1,21 @@
+repositories:
+  robots/Universal_Robots_ROS2_GZ_Simulation:
+    type: git
+    url: https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation.git
+    version: main
+  robots/Universal_Robots_ROS2_Description:
+    type: git
+    url: https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
+    version: jazzy
+  robots/franka_description:
+    type: git
+    url: https://github.com/frankarobotics/franka_description.git
+    version: jazzy
+  cell/techtory_cell_description:
+    type: git
+    url: git@gitlab.cc-asp.fraunhofer.de:ipa326/demonstrator/arena2036/techtory_cell_description.git
+    version: main
+  plugins/controls/topic_based_ros2_control:
+    type: git
+    url: https://github.com/PickNikRobotics/topic_based_ros2_control.git
+    version: main
