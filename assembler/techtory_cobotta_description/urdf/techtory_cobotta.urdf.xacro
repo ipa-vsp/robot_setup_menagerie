@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="techtory_cobotta">
+
+    <!-- Parameters -->
+    <xacro:arg name="prefix" default="" />
+    <xacro:arg name="sim_type" default="real" /> <!-- real, mujoco, gazebo, isaac_sim -->
+
+    <!-- Include Cell -->
+    <xacro:include filename="$(find techtory_cell_description)/urdf/techtory_cell.xacro" />
+    
+    <!-- Include Robot -->
+    <xacro:include filename="$(find cobotta_900_description)/urdf/cobotta_900.urdf.xacro" />
+
+    <!-- Include ROS 2 Control -->
+    <xacro:include filename="$(find techtory_cobotta_description)/urdf/techtory_cobotta.ros2_control.xacro" />
+
+    <!-- World link -->
+    <link name="world" />
+
+    <!-- Cell Instance -->
+    <xacro:techtory_cell parent="world" prefix="$(arg prefix)">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:techtory_cell>
+
+    <!-- Robot Instance attached to robot_base_plate_link -->
+    <xacro:cobotta_900 prefix="$(arg prefix)" />
+
+    <joint name="$(arg prefix)robot_to_plate_joint" type="fixed">
+        <parent link="$(arg prefix)robot_base_plate_link" />
+        <child link="$(arg prefix)base_link" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+
+    <!-- Dummy Camera -->
+    <link name="$(arg prefix)camera_link">
+        <visual>
+            <geometry>
+                <box size="0.05 0.05 0.05" />
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 1" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="$(arg prefix)camera_joint" type="fixed">
+        <parent link="$(arg prefix)cell_link" />
+        <child link="$(arg prefix)camera_link" />
+        <origin xyz="0.5 0 1.5" rpy="0 ${pi/2} 0" />
+    </joint>
+
+    <!-- ROS 2 Control Instance -->
+    <xacro:techtory_cobotta_ros2_control 
+        name="techtory_cobotta_ros2_control" 
+        prefix="$(arg prefix)" 
+        sim_type="$(arg sim_type)" />
+
+</robot>

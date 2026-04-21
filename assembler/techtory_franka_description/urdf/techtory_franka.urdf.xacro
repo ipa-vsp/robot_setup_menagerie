@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="techtory_franka">
+
+    <!-- Parameters -->
+    <xacro:arg name="prefix" default="" />
+    <xacro:arg name="sim_type" default="real" /> <!-- real, mujoco, gazebo, isaac_sim -->
+    <xacro:arg name="robot_type" default="fr3" />
+
+    <!-- Include Cell -->
+    <xacro:include filename="$(find techtory_cell_description)/urdf/techtory_cell.xacro" />
+    
+    <!-- Include Robot -->
+    <xacro:include filename="$(find franka_description)/robots/common/franka_robot.xacro"/>
+
+    <!-- Include ROS 2 Control -->
+    <xacro:include filename="$(find techtory_franka_description)/urdf/techtory_franka.ros2_control.xacro" />
+
+    <!-- World link -->
+    <link name="world" />
+
+    <!-- Cell Instance -->
+    <xacro:techtory_cell parent="world" prefix="$(arg prefix)">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:techtory_cell>
+
+    <!-- Robot Instance attached to robot_base_plate_link -->
+    <xacro:franka_robot 
+        robot_type="$(arg robot_type)"
+        joint_limits="${xacro.load_yaml('$(find franka_description)/robots/$(arg robot_type)/joint_limits.yaml')}"
+        inertials="${xacro.load_yaml('$(find franka_description)/robots/$(arg robot_type)/inertials.yaml')}"
+        kinematics="${xacro.load_yaml('$(find franka_description)/robots/$(arg robot_type)/kinematics.yaml')}"
+        accelerometer_config="${xacro.load_yaml('$(find franka_description)/robots/$(arg robot_type)/accelerometers.yaml')}"
+        dynamics="${xacro.load_yaml('$(find franka_description)/robots/$(arg robot_type)/dynamics.yaml')}"
+        hand="true"
+        ee_id="franka_hand"
+        ros2_control="false"
+        arm_prefix="$(arg prefix)"
+        connected_to=""
+    >
+    </xacro:franka_robot>
+
+    <!-- Manual joint to attach Franka to the plate -->
+    <joint name="$(arg prefix)franka_to_plate_joint" type="fixed">
+        <parent link="$(arg prefix)robot_base_plate_link" />
+        <child link="$(arg prefix)$(arg robot_type)_link0" />
+        <origin xyz="0 0 0" rpy="0 0 1.5708" />
+    </joint>
+
+    <!-- ROS 2 Control Instance -->
+    <xacro:techtory_franka_ros2_control 
+        name="techtory_franka_ros2_control" 
+        prefix="$(arg prefix)" 
+        robot_type="$(arg robot_type)"
+        sim_type="$(arg sim_type)" />
+
+    <!-- Dummy Camera -->
+    <link name="$(arg prefix)camera_link">
+        <visual>
+            <geometry>
+                <box size="0.05 0.05 0.05" />
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 1" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="$(arg prefix)camera_joint" type="fixed">
+        <parent link="$(arg prefix)cell_link" />
+        <child link="$(arg prefix)camera_link" />
+        <origin xyz="0.5 0 1.5" rpy="0 ${pi/2} 0" />
+    </joint>
+
+</robot>

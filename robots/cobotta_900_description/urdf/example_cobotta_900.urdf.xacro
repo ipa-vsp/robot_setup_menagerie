@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="cobotta_pro" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Include description for 6-dof manipulator -->
+  <xacro:include filename="$(find cobotta_900_description)/urdf/cobotta_900.urdf.xacro"/>
+  <xacro:arg name="prefix" default="cobotta_pro_"/>
+
+  <!-- Instantiate cobotta pro -->
+  <xacro:cobotta_900 prefix="$(arg prefix)"/>
+
+  <link name="world"/>
+
+  <joint name="$(arg prefix)joint_w" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="world"/>
+    <child link="$(arg prefix)base_link"/>
+  </joint>
+</robot>

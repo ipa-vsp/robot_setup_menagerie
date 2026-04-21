@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="techtory_cobotta_ros2_control" params="name prefix sim_type:='real'">
+
+        <ros2_control name="${name}" type="system">
+            <hardware>
+                <xacro:if value="${sim_type == 'real'}">
+                    <plugin>mock_components/GenericSystem</plugin>
+                </xacro:if>
+                <xacro:if value="${sim_type == 'mujoco'}">
+                    <plugin>mujoco_ros2_control/MujocoSystemInterface</plugin>
+                </xacro:if>
+                <xacro:if value="${sim_type == 'gazebo'}">
+                    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+                </xacro:if>
+                <xacro:if value="${sim_type == 'isaac_sim'}">
+                    <plugin>topic_based_ros2_control/TopicBasedSystem</plugin>
+                    <param name="joint_command_topic">/topic_based_joint_commands</param>
+                    <param name="joint_state_topic">/topic_based_joint_states</param>
+                </xacro:if>
+            </hardware>
+
+            <joint name="${prefix}joint_1">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="${prefix}joint_2">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="${prefix}joint_3">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="${prefix}joint_4">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="${prefix}joint_5">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="${prefix}joint_6">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+        </ros2_control>
+
+        <xacro:if value="${sim_type == 'gazebo'}">
+            <gazebo>
+                <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+                    <parameters>$(find techtory_cobotta_description)/config/ros2_controllers.yaml</parameters>
+                </plugin>
+            </gazebo>
+        </xacro:if>
+
+    </xacro:macro>
+</robot>
