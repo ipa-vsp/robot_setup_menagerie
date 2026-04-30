@@ -3,12 +3,13 @@
 <package format="3">
   <name>techtory_franka_description</name>
   <version>0.0.0</version>
-  <description>Assembly package for Franka FR3 robot, cell, gripper and camera.</description>
+  <description>Assembly package for Franka robot, cell, gripper and camera.</description>
   <maintainer email="ipa326@todo.todo">ipa326</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <exec_depend>realsense2_description</exec_depend>
   <exec_depend>franka_description</exec_depend>
   <exec_depend>techtory_cell_description</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
@@ -17,7 +18,6 @@
   <exec_depend>joint_state_publisher_gui</exec_depend>
   <exec_depend>ros2_control</exec_depend>
   <exec_depend>controller_manager</exec_depend>
-  <exec_depend>topic_based_ros2_control</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

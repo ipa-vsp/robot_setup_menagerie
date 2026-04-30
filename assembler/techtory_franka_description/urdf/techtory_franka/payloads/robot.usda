@@ -1,0 +1,855 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.0"
+    }
+    defaultPrim = "techtory_franka"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpr5yj1qn3/techtory_franka.usdc
+
+
+Generated from Composed Stage of root layer /home/ipa326/ros_ws/arena/colcon_setup_ws/src/assembler/techtory_franka_description/urdf/usdex/techtory_franka.usdc
+
+
+Generated from Composed Stage of root layer /home/ipa326/ros_ws/arena/colcon_setup_ws/src/assembler/techtory_franka_description/urdf/temp/techtory_franka.usd
+
+
+Generated from Composed Stage of root layer /home/ipa326/ros_ws/arena/colcon_setup_ws/src/assembler/techtory_franka_description/urdf/techtory_franka/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "techtory_franka" (
+    prepend apiSchemas = ["IsaacRobotAPI", "IsaacLinkAPI"]
+)
+{
+    custom rel isaac:physics:robotJoints
+    prepend rel isaac:physics:robotJoints = [
+        </techtory_franka/Physics/world_cell_joint>,
+        </techtory_franka/Physics/fr3_joint1>,
+        </techtory_franka/Physics/fr3_joint2>,
+        </techtory_franka/Physics/fr3_joint3>,
+        </techtory_franka/Physics/fr3_joint4>,
+        </techtory_franka/Physics/fr3_joint5>,
+        </techtory_franka/Physics/fr3_joint6>,
+        </techtory_franka/Physics/fr3_joint7>,
+        </techtory_franka/Physics/fr3_finger_joint1>,
+        </techtory_franka/Physics/fr3_finger_joint2>,
+        </techtory_franka/Physics/robot_base_plate_link_joint>,
+        </techtory_franka/Physics/fr3_link0_accelerometer_top_joint>,
+        </techtory_franka/Physics/fr3_link0_accelerometer_bottom_joint>,
+        </techtory_franka/Physics/fr3_link1_accelerometer_top_joint>,
+        </techtory_franka/Physics/fr3_link1_accelerometer_bottom_joint>,
+        </techtory_franka/Physics/fr3_link2_accelerometer_top_joint>,
+        </techtory_franka/Physics/fr3_link2_accelerometer_bottom_joint>,
+        </techtory_franka/Physics/fr3_link3_accelerometer_top_joint>,
+        </techtory_franka/Physics/fr3_link3_accelerometer_bottom_joint>,
+        </techtory_franka/Physics/fr3_link4_accelerometer_top_joint>,
+        </techtory_franka/Physics/fr3_link4_accelerometer_bottom_joint>,
+        </techtory_franka/Physics/fr3_link5_accelerometer_top_joint>,
+        </techtory_franka/Physics/fr3_link5_accelerometer_bottom_joint>,
+        </techtory_franka/Physics/fr3_joint8>,
+        </techtory_franka/Physics/fr3_hand_joint>,
+        </techtory_franka/Physics/fr3_hand_tcp_joint>,
+        </techtory_franka/Physics/franka_to_plate_joint>,
+        </techtory_franka/Physics/camera1_joint>,
+        </techtory_franka/Physics/camera1_link_joint>,
+        </techtory_franka/Physics/camera1_depth_joint>,
+        </techtory_franka/Physics/camera1_depth_optical_joint>,
+        </techtory_franka/Physics/camera1_infra1_joint>,
+        </techtory_franka/Physics/camera1_infra1_optical_joint>,
+        </techtory_franka/Physics/camera1_infra2_joint>,
+        </techtory_franka/Physics/camera1_infra2_optical_joint>,
+        </techtory_franka/Physics/camera1_color_joint>,
+        </techtory_franka/Physics/camera1_color_optical_joint>,
+        </techtory_franka/Physics/camera2_joint>,
+        </techtory_franka/Physics/camera2_link_joint>,
+        </techtory_franka/Physics/camera2_depth_joint>,
+        </techtory_franka/Physics/camera2_depth_optical_joint>,
+        </techtory_franka/Physics/camera2_infra1_joint>,
+        </techtory_franka/Physics/camera2_infra1_optical_joint>,
+        </techtory_franka/Physics/camera2_infra2_joint>,
+        </techtory_franka/Physics/camera2_infra2_optical_joint>,
+        </techtory_franka/Physics/camera2_color_joint>,
+        </techtory_franka/Physics/camera2_color_optical_joint>,
+    ]
+    custom rel isaac:physics:robotLinks
+    prepend rel isaac:physics:robotLinks = [
+        </techtory_franka/Geometry/world/cell_link>,
+        </techtory_franka/Geometry/world/cell_link/cell_link_1>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link1_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link1_collision>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link2_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link2_collision>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link3_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link3_collision>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link4_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link4_collision>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link5_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link5_collision>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link6_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link6_collision>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link7_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link7_collision>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_leftfinger>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_leftfinger/fr3_leftfinger_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_rightfinger>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_rightfinger/fr3_rightfinger_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/robot_base_link_1>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link0_accelerometer_top>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link0_accelerometer_bottom>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link1_accelerometer_top>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link1_accelerometer_bottom>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link2_accelerometer_top>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link2_accelerometer_bottom>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link3_accelerometer_top>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link3_accelerometer_bottom>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link4_accelerometer_top>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link4_accelerometer_bottom>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link5_accelerometer_top>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link5_accelerometer_bottom>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_hand_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_hand_collision>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_hand_tcp>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link0_visual>,
+        </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link0_collision>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/d435>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_depth_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_depth_frame/camera1_depth_optical_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_infra1_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_infra1_frame/camera1_infra1_optical_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_infra2_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_infra2_frame/camera1_infra2_optical_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_color_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_color_frame/camera1_color_optical_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/d435>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_depth_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_depth_frame/camera2_depth_optical_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_infra1_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_infra1_frame/camera2_infra1_optical_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_infra2_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_infra2_frame/camera2_infra2_optical_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_color_frame>,
+        </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_color_frame/camera2_color_optical_frame>,
+    ]
+
+    over "Physics"
+    {
+        over "world_cell_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_joint3" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_joint4" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_joint5" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_joint6" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_joint7" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_finger_joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_finger_joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "robot_base_plate_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link0_accelerometer_top_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link0_accelerometer_bottom_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link1_accelerometer_top_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link1_accelerometer_bottom_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link2_accelerometer_top_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link2_accelerometer_bottom_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link3_accelerometer_top_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link3_accelerometer_bottom_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link4_accelerometer_top_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link4_accelerometer_bottom_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link5_accelerometer_top_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_link5_accelerometer_bottom_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_joint8" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_hand_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "fr3_hand_tcp_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "franka_to_plate_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_depth_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_depth_optical_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_infra1_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_infra1_optical_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_infra2_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_infra2_optical_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_color_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera1_color_optical_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_depth_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_depth_optical_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_infra1_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_infra1_optical_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_infra2_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_infra2_optical_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_color_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera2_color_optical_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "world"
+        {
+            over "cell_link" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "robot_base_plate_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "fr3_link0" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        over "fr3_link1" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "fr3_link2" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                                over "fr3_link3" (
+                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                )
+                                {
+                                    over "fr3_link4" (
+                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                    )
+                                    {
+                                        over "fr3_link5" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                            over "fr3_link6" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                                over "fr3_link7" (
+                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                )
+                                                {
+                                                    over "fr3_link8" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        over "fr3_hand" (
+                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                        )
+                                                        {
+                                                            over "fr3_leftfinger" (
+                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                            )
+                                                            {
+                                                                over "fr3_leftfinger_visual" (
+                                                                    prepend apiSchemas = ["IsaacSiteAPI"]
+                                                                )
+                                                                {
+                                                                }
+                                                            }
+
+                                                            over "fr3_rightfinger" (
+                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                            )
+                                                            {
+                                                                over "fr3_rightfinger_visual" (
+                                                                    prepend apiSchemas = ["IsaacSiteAPI"]
+                                                                )
+                                                                {
+                                                                }
+                                                            }
+
+                                                            over "fr3_hand_tcp" (
+                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                            )
+                                                            {
+                                                            }
+
+                                                            over "fr3_hand_visual" (
+                                                                prepend apiSchemas = ["IsaacSiteAPI"]
+                                                            )
+                                                            {
+                                                            }
+
+                                                            over "fr3_hand_collision" (
+                                                                prepend apiSchemas = ["IsaacSiteAPI"]
+                                                            )
+                                                            {
+                                                            }
+                                                        }
+                                                    }
+
+                                                    over "fr3_link7_visual" (
+                                                        prepend apiSchemas = ["IsaacSiteAPI"]
+                                                    )
+                                                    {
+                                                    }
+
+                                                    over "fr3_link7_collision" (
+                                                        prepend apiSchemas = ["IsaacSiteAPI"]
+                                                    )
+                                                    {
+                                                    }
+                                                }
+
+                                                over "fr3_link6_visual" (
+                                                    prepend apiSchemas = ["IsaacSiteAPI"]
+                                                )
+                                                {
+                                                }
+
+                                                over "fr3_link6_collision" (
+                                                    prepend apiSchemas = ["IsaacSiteAPI"]
+                                                )
+                                                {
+                                                }
+                                            }
+
+                                            over "fr3_link5_accelerometer_top" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                            }
+
+                                            over "fr3_link5_accelerometer_bottom" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                            }
+
+                                            over "fr3_link5_visual" (
+                                                prepend apiSchemas = ["IsaacSiteAPI"]
+                                            )
+                                            {
+                                            }
+
+                                            over "fr3_link5_collision" (
+                                                prepend apiSchemas = ["IsaacSiteAPI"]
+                                            )
+                                            {
+                                            }
+                                        }
+
+                                        over "fr3_link4_accelerometer_top" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                        }
+
+                                        over "fr3_link4_accelerometer_bottom" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                        }
+
+                                        over "fr3_link4_visual" (
+                                            prepend apiSchemas = ["IsaacSiteAPI"]
+                                        )
+                                        {
+                                        }
+
+                                        over "fr3_link4_collision" (
+                                            prepend apiSchemas = ["IsaacSiteAPI"]
+                                        )
+                                        {
+                                        }
+                                    }
+
+                                    over "fr3_link3_accelerometer_top" (
+                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                    )
+                                    {
+                                    }
+
+                                    over "fr3_link3_accelerometer_bottom" (
+                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                    )
+                                    {
+                                    }
+
+                                    over "fr3_link3_visual" (
+                                        prepend apiSchemas = ["IsaacSiteAPI"]
+                                    )
+                                    {
+                                    }
+
+                                    over "fr3_link3_collision" (
+                                        prepend apiSchemas = ["IsaacSiteAPI"]
+                                    )
+                                    {
+                                    }
+                                }
+
+                                over "fr3_link2_accelerometer_top" (
+                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                )
+                                {
+                                }
+
+                                over "fr3_link2_accelerometer_bottom" (
+                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                )
+                                {
+                                }
+
+                                over "fr3_link2_visual" (
+                                    prepend apiSchemas = ["IsaacSiteAPI"]
+                                )
+                                {
+                                }
+
+                                over "fr3_link2_collision" (
+                                    prepend apiSchemas = ["IsaacSiteAPI"]
+                                )
+                                {
+                                }
+                            }
+
+                            over "fr3_link1_accelerometer_top" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+
+                            over "fr3_link1_accelerometer_bottom" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+
+                            over "fr3_link1_visual" (
+                                prepend apiSchemas = ["IsaacSiteAPI"]
+                            )
+                            {
+                            }
+
+                            over "fr3_link1_collision" (
+                                prepend apiSchemas = ["IsaacSiteAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "fr3_link0_accelerometer_top" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                        }
+
+                        over "fr3_link0_accelerometer_bottom" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                        }
+
+                        over "fr3_link0_visual" (
+                            prepend apiSchemas = ["IsaacSiteAPI"]
+                        )
+                        {
+                        }
+
+                        over "fr3_link0_collision" (
+                            prepend apiSchemas = ["IsaacSiteAPI"]
+                        )
+                        {
+                        }
+                    }
+
+                    over "robot_base_link" (
+                        prepend apiSchemas = ["IsaacSiteAPI"]
+                    )
+                    {
+                    }
+
+                    over "robot_base_link_1" (
+                        prepend apiSchemas = ["IsaacSiteAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "camera1_bottom_screw_frame" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "camera1_link" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        over "camera1_depth_frame" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "camera1_depth_optical_frame" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera1_infra1_frame" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "camera1_infra1_optical_frame" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera1_infra2_frame" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "camera1_infra2_optical_frame" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera1_color_frame" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "camera1_color_optical_frame" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "d435" (
+                            prepend apiSchemas = ["IsaacSiteAPI"]
+                        )
+                        {
+                        }
+                    }
+                }
+
+                over "camera2_bottom_screw_frame" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "camera2_link" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        over "camera2_depth_frame" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "camera2_depth_optical_frame" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera2_infra1_frame" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "camera2_infra1_optical_frame" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera2_infra2_frame" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "camera2_infra2_optical_frame" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera2_color_frame" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "camera2_color_optical_frame" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "d435" (
+                            prepend apiSchemas = ["IsaacSiteAPI"]
+                        )
+                        {
+                        }
+                    }
+                }
+
+                over "cell_link" (
+                    prepend apiSchemas = ["IsaacSiteAPI"]
+                )
+                {
+                }
+
+                over "cell_link_1" (
+                    prepend apiSchemas = ["IsaacSiteAPI"]
+                )
+                {
+                }
+            }
+        }
+    }
+}
+

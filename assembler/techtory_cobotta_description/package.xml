@@ -3,12 +3,13 @@
 <package format="3">
   <name>techtory_cobotta_description</name>
   <version>0.0.0</version>
-  <description>Assembly package for Denso Cobotta robot, cell, gripper and camera.</description>
+  <description>Assembly package for Cobotta robot, cell, gripper and camera.</description>
   <maintainer email="ipa326@todo.todo">ipa326</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <exec_depend>realsense2_description</exec_depend>
   <exec_depend>cobotta_900_description</exec_depend>
   <exec_depend>techtory_cell_description</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
@@ -22,3 +23,4 @@
     <build_type>ament_cmake</build_type>
   </export>
 </package>
+

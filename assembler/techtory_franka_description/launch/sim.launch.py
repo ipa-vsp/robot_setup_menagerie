@@ -114,12 +114,17 @@ def launch_setup(context, *args, **kwargs):
             }.items(),
         )
 
-        # Make the /clock topic available in ROS
+        # Make the /clock and camera topics available in ROS
+        prefix_str = prefix.perform(context)
         gz_sim_bridge = Node(
             package="ros_gz_bridge",
             executable="parameter_bridge",
             arguments=[
                 "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+                f"/{prefix_str}camera/image@sensor_msgs/msg/Image[gz.msgs.Image",
+                f"/{prefix_str}camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo",
+                f"/{prefix_str}camera/depth_image@sensor_msgs/msg/Image[gz.msgs.Image",
+                f"/{prefix_str}camera/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloud2",
             ],
             output="screen",
         )

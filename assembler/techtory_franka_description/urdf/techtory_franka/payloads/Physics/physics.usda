@@ -1,0 +1,1160 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.0"
+    }
+    defaultPrim = "techtory_franka"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpr5yj1qn3/techtory_franka.usdc
+
+
+Generated from Composed Stage of root layer /home/ipa326/ros_ws/arena/colcon_setup_ws/src/assembler/techtory_franka_description/urdf/usdex/techtory_franka.usdc
+
+
+Generated from Composed Stage of root layer /home/ipa326/ros_ws/arena/colcon_setup_ws/src/assembler/techtory_franka_description/urdf/temp/techtory_franka.usd
+
+
+Generated from Composed Stage of root layer /home/ipa326/ros_ws/arena/colcon_setup_ws/src/assembler/techtory_franka_description/urdf/techtory_franka/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "techtory_franka"
+{
+    over "Geometry"
+    {
+        over "world"
+        {
+            over "cell_link" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI", "PhysicsMassAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+                point3f physics:centerOfMass = (-0.010188, 0.010903, 0.93146)
+                float3 physics:diagonalInertia = (522.69, 819.20953, 833.7405)
+                float physics:mass = 1383.8
+                quatf physics:principalAxes = (0.70708853, 0.001961661, 0.70711935, 0.0020427078)
+
+                over "robot_base_plate_link" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (-0.010188, 0.010903, 0.93146)
+                    float3 physics:diagonalInertia = (522.69, 819.20953, 833.7405)
+                    float physics:mass = 1383.8
+                    quatf physics:principalAxes = (0.70708853, 0.001961661, 0.70711935, 0.0020427078)
+
+                    over "fr3_link0" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                    )
+                    {
+                        point3f physics:centerOfMass = (-0.0172, 0.0004, 0.0745)
+                        float3 physics:diagonalInertia = (0.0067344354, 0.010765565, 0.0115)
+                        float physics:mass = 2.3966
+                        quatf physics:principalAxes = (0.29077372, 0.29077372, 0.6445546, 0.6445546)
+
+                        over "fr3_link0_accelerometer_top" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                        }
+
+                        over "fr3_link0_accelerometer_bottom" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                        }
+
+                        over "fr3_link1" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            point3f physics:centerOfMass = (4.128e-7, -0.018125132, -0.038603596)
+                            float3 physics:diagonalInertia = (0.0061063385, 0.022724615, 0.023928622)
+                            float physics:mass = 2.9274654
+                            quatf physics:principalAxes = (0.70845234, 0.035019826, 0.7030714, -0.050591607)
+
+                            over "fr3_link1_accelerometer_top" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+
+                            over "fr3_link1_accelerometer_bottom" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+
+                            over "fr3_link2" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                                point3f physics:centerOfMass = (0.0031828864, -0.074322164, 0.008814609)
+                                float3 physics:diagonalInertia = (0.024637066, 0.04119245, 0.06295672)
+                                float physics:mass = 2.935537
+                                quatf physics:principalAxes = (0.10611624, 0.68490213, 0.7204017, -0.025881302)
+
+                                over "fr3_link2_accelerometer_top" (
+                                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                )
+                                {
+                                }
+
+                                over "fr3_link2_accelerometer_bottom" (
+                                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                )
+                                {
+                                }
+
+                                over "fr3_link3" (
+                                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                )
+                                {
+                                    point3f physics:centerOfMass = (0.040701568, -0.0048200567, -0.028973082)
+                                    float3 physics:diagonalInertia = (0.017158687, 0.018986875, 0.02674089)
+                                    float physics:mass = 2.2449014
+                                    quatf physics:principalAxes = (0.7610571, -0.011726851, 0.5414695, -0.35702294)
+
+                                    over "fr3_link3_accelerometer_top" (
+                                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                    )
+                                    {
+                                    }
+
+                                    over "fr3_link3_accelerometer_bottom" (
+                                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                    )
+                                    {
+                                    }
+
+                                    over "fr3_link4" (
+                                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                    )
+                                    {
+                                        point3f physics:centerOfMass = (-0.045910098, 0.063049294, -0.008518787)
+                                        float3 physics:diagonalInertia = (0.016004663, 0.03727166, 0.051389992)
+                                        float physics:mass = 2.6155956
+                                        quatf physics:principalAxes = (-0.30309448, 0.28276965, 0.31635714, 0.85328376)
+
+                                        over "fr3_link4_accelerometer_top" (
+                                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                        )
+                                        {
+                                        }
+
+                                        over "fr3_link4_accelerometer_bottom" (
+                                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                        )
+                                        {
+                                        }
+
+                                        over "fr3_link5" (
+                                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                        )
+                                        {
+                                            point3f physics:centerOfMass = (-0.0016039605, 0.029253626, -0.097296596)
+                                            float3 physics:diagonalInertia = (0.013063375, 0.044914372, 0.057933453)
+                                            float physics:mass = 2.3271208
+                                            quatf physics:principalAxes = (0.70299417, 0.16998768, 0.59671164, 0.34761852)
+
+                                            over "fr3_link5_accelerometer_top" (
+                                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                            )
+                                            {
+                                            }
+
+                                            over "fr3_link5_accelerometer_bottom" (
+                                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                            )
+                                            {
+                                            }
+
+                                            over "fr3_link6" (
+                                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                            )
+                                            {
+                                                point3f physics:centerOfMass = (0.05971312, -0.04102947, -0.010169272)
+                                                float3 physics:diagonalInertia = (0.0019352875, 0.016112298, 0.017503895)
+                                                float physics:mass = 1.8170377
+                                                quatf physics:principalAxes = (0.79995805, -0.5464139, 0.07869404, 0.2351729)
+
+                                                over "fr3_link7" (
+                                                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                                )
+                                                {
+                                                    point3f physics:centerOfMass = (0.0045225816, 0.008626192, -0.016163325)
+                                                    float3 physics:diagonalInertia = (5.641319e-7, 0.00022364153, 0.00022383581)
+                                                    float physics:mass = 0.62714326
+                                                    quatf physics:principalAxes = (0.5158688, 0.33836383, 0.37746206, 0.690588)
+
+                                                    over "fr3_link8" (
+                                                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                                    )
+                                                    {
+                                                        over "fr3_hand" (
+                                                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                                        )
+                                                        {
+                                                            point3f physics:centerOfMass = (-0.0000376, 0.0119128, 0.020726)
+                                                            float3 physics:diagonalInertia = (0.00029972228, 0.0017402777, 0.00186)
+                                                            float physics:mass = 0.6544
+                                                            quatf physics:principalAxes = (-0.49651664, 0.5034593, 0.49651664, 0.5034593)
+
+                                                            over "fr3_hand_tcp" (
+                                                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                                            )
+                                                            {
+                                                            }
+
+                                                            over "fr3_leftfinger" (
+                                                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                                            )
+                                                            {
+                                                                point3f physics:centerOfMass = (0, 0.015285, 0.0219675)
+                                                                float3 physics:diagonalInertia = (0.0000016076843, 0.00000849, 0.0000086923155)
+                                                                float physics:mass = 0.0291
+                                                                quatf physics:principalAxes = (0.46060732, 0.5365081, 0.5365081, 0.46060732)
+
+                                                                over "box" (
+                                                                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                                                                )
+                                                                {
+                                                                }
+
+                                                                over "box_1" (
+                                                                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                                                                )
+                                                                {
+                                                                }
+
+                                                                over "box_2" (
+                                                                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                                                                )
+                                                                {
+                                                                }
+
+                                                                over "box_3" (
+                                                                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                                                                )
+                                                                {
+                                                                }
+                                                            }
+
+                                                            over "fr3_rightfinger" (
+                                                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                                            )
+                                                            {
+                                                                point3f physics:centerOfMass = (0, 0.015285, 0.0219675)
+                                                                float3 physics:diagonalInertia = (0.0000016076843, 0.00000849, 0.0000086923155)
+                                                                float physics:mass = 0.0291
+                                                                quatf physics:principalAxes = (0.46060732, 0.5365081, 0.5365081, 0.46060732)
+
+                                                                over "box" (
+                                                                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                                                                )
+                                                                {
+                                                                }
+
+                                                                over "box_1" (
+                                                                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                                                                )
+                                                                {
+                                                                }
+
+                                                                over "box_2" (
+                                                                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                                                                )
+                                                                {
+                                                                }
+
+                                                                over "box_3" (
+                                                                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                                                                )
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                over "camera1_bottom_screw_frame" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    over "camera1_link" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                    )
+                    {
+                        point3f physics:centerOfMass = (0, 0, 0)
+                        float3 physics:diagonalInertia = (0.00049894, 0.003879257, 0.003881243)
+                        float physics:mass = 0.072
+                        quatf physics:principalAxes = (-0.5, 0.5, 0.5, 0.5)
+
+                        over "box" (
+                            prepend apiSchemas = ["NewtonCollisionAPI"]
+                        )
+                        {
+                        }
+
+                        over "camera1_depth_frame" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            over "camera1_depth_optical_frame" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera1_infra1_frame" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            over "camera1_infra1_optical_frame" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera1_infra2_frame" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            over "camera1_infra2_optical_frame" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera1_color_frame" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            over "camera1_color_optical_frame" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+                        }
+                    }
+                }
+
+                over "camera2_bottom_screw_frame" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    over "camera2_link" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                    )
+                    {
+                        point3f physics:centerOfMass = (0, 0, 0)
+                        float3 physics:diagonalInertia = (0.00049894, 0.003879257, 0.003881243)
+                        float physics:mass = 0.072
+                        quatf physics:principalAxes = (-0.5, 0.5, 0.5, 0.5)
+
+                        over "box" (
+                            prepend apiSchemas = ["NewtonCollisionAPI"]
+                        )
+                        {
+                        }
+
+                        over "camera2_depth_frame" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            over "camera2_depth_optical_frame" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera2_infra1_frame" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            over "camera2_infra1_optical_frame" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera2_infra2_frame" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            over "camera2_infra2_optical_frame" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "camera2_color_frame" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            over "camera2_color_optical_frame" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        def PhysicsRevoluteJoint "fr3_joint1" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.003
+            float drive:angular:physics:maxForce = 87
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1>
+            point3f physics:localPos0 = (0, -0.3, 1.263)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710546, 0, 0, 0.7071081)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -166.19786
+            float physics:upperLimit = 166.19786
+            custom float urdf:dynamics:damping = 0.003
+            custom float urdf:dynamics:friction = 0.2
+            custom float urdf:limit:effort = 87
+            custom float urdf:limit:velocity = 2.62
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -2.9007
+            custom float urdf:safety_controller:soft_upper_limit = 2.9007
+
+            def Scope "position_based_velocity_limits"
+            {
+                custom string urdf:deceleration_limit = "6.0"
+                custom string urdf:velocity_offset = "0.652"
+            }
+        }
+
+        def PhysicsRevoluteJoint "fr3_joint2" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.003
+            float drive:angular:physics:maxForce = 87
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2>
+            point3f physics:localPos0 = (0, -0.3, 1.263)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.49999905, 0.49999908, 0.50000095, -0.50000095)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -105.20078
+            float physics:upperLimit = 105.20078
+            custom float urdf:dynamics:damping = 0.003
+            custom float urdf:dynamics:friction = 0.2
+            custom float urdf:limit:effort = 87
+            custom float urdf:limit:velocity = 2.62
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -1.8361
+            custom float urdf:safety_controller:soft_upper_limit = 1.8361
+
+            def Scope "position_based_velocity_limits"
+            {
+                custom string urdf:deceleration_limit = "2.585"
+                custom string urdf:velocity_offset = "0.25"
+            }
+        }
+
+        def PhysicsRevoluteJoint "fr3_joint3" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.003
+            float drive:angular:physics:maxForce = 87
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3>
+            point3f physics:localPos0 = (-1.0816219e-8, -0.3, 1.579)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710546, -7.8504476e-17, -7.850477e-17, 0.7071081)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -166.19786
+            float physics:upperLimit = 166.19786
+            custom float urdf:dynamics:damping = 0.003
+            custom float urdf:dynamics:friction = 0.2
+            custom float urdf:limit:effort = 87
+            custom float urdf:limit:velocity = 2.62
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -2.9007
+            custom float urdf:safety_controller:soft_upper_limit = 2.9007
+
+            def Scope "position_based_velocity_limits"
+            {
+                custom string urdf:deceleration_limit = "3.5"
+                custom string urdf:velocity_offset = "0.2005"
+            }
+        }
+
+        def PhysicsRevoluteJoint "fr3_joint4" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.003
+            float drive:angular:physics:maxForce = 87
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4>
+            point3f physics:localPos0 = (-3.196259e-7, -0.2175, 1.579)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.49999905, 0.49999908, 0.50000095, 0.50000095)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -176.29912
+            float physics:upperLimit = -6.6978765
+            custom float urdf:dynamics:damping = 0.003
+            custom float urdf:dynamics:friction = 0.2
+            custom float urdf:limit:effort = 87
+            custom float urdf:limit:velocity = 2.62
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -3.077
+            custom float urdf:safety_controller:soft_upper_limit = -0.1169
+
+            def Scope "position_based_velocity_limits"
+            {
+                custom string urdf:deceleration_limit = "4.0"
+                custom string urdf:velocity_offset = "0.3542"
+            }
+        }
+
+        def PhysicsRevoluteJoint "fr3_joint5" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.003
+            float drive:angular:physics:maxForce = 12
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5>
+            point3f physics:localPos0 = (2.3275406e-9, -0.3, 1.963)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710546, -1.5700895e-16, -1.5700953e-16, 0.7071081)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -164.79985
+            float physics:upperLimit = 164.79985
+            custom float urdf:dynamics:damping = 0.003
+            custom float urdf:dynamics:friction = 0.2
+            custom float urdf:limit:effort = 12
+            custom float urdf:limit:velocity = 5.26
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -2.8763
+            custom float urdf:safety_controller:soft_upper_limit = 2.8763
+
+            def Scope "position_based_velocity_limits"
+            {
+                custom string urdf:deceleration_limit = "17.0"
+                custom string urdf:velocity_offset = "0.5738"
+            }
+        }
+
+        def PhysicsRevoluteJoint "fr3_joint6" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.003
+            float drive:angular:physics:maxForce = 12
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6>
+            point3f physics:localPos0 = (2.3275406e-9, -0.3, 1.963)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.49999905, 0.49999908, 0.50000095, 0.50000095)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 25.198685
+            float physics:upperLimit = 264.7982
+            custom float urdf:dynamics:damping = 0.003
+            custom float urdf:dynamics:friction = 0.2
+            custom float urdf:limit:effort = 12
+            custom float urdf:limit:velocity = 4.18
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = 0.4398
+            custom float urdf:safety_controller:soft_upper_limit = 4.6216
+
+            def Scope "position_based_velocity_limits"
+            {
+                custom string urdf:deceleration_limit = "5.5"
+                custom string urdf:velocity_offset = "0.4885"
+            }
+        }
+
+        def PhysicsRevoluteJoint "fr3_joint7" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.003
+            float drive:angular:physics:maxForce = 12
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7>
+            point3f physics:localPos0 = (-3.2706944e-7, -0.212, 1.963)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-2.4203189e-8, 0.70710546, 0.7071081, -2.420328e-8)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -174.79796
+            float physics:upperLimit = 174.79796
+            custom float urdf:dynamics:damping = 0.003
+            custom float urdf:dynamics:friction = 0.2
+            custom float urdf:limit:effort = 12
+            custom float urdf:limit:velocity = 5.26
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -3.0508
+            custom float urdf:safety_controller:soft_upper_limit = 3.0508
+
+            def Scope "position_based_velocity_limits"
+            {
+                custom string urdf:deceleration_limit = "17.0"
+                custom string urdf:velocity_offset = "0.4592"
+            }
+        }
+
+        def PhysicsPrismaticJoint "fr3_finger_joint1" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 0.3
+            float drive:linear:physics:maxForce = 100
+            uniform token physics:axis = "Y"
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_leftfinger>
+            point3f physics:localPos0 = (-3.3839225e-7, -0.212, 1.7976)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-2.4203189e-8, 0.70710546, 0.7071081, -2.420328e-8)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.04
+            custom float urdf:dynamics:damping = 0.3
+            custom float urdf:dynamics:friction = 0
+            custom float urdf:limit:effort = 100
+            custom float urdf:limit:velocity = 0.2
+        }
+
+        def PhysicsPrismaticJoint "fr3_finger_joint2" (
+            prepend apiSchemas = ["NewtonMimicAPI", "PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 0.3
+            float drive:linear:physics:maxForce = 100
+            rel newton:mimicJoint = </techtory_franka/Physics/fr3_finger_joint1>
+            uniform token physics:axis = "Y"
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_rightfinger>
+            point3f physics:localPos0 = (-3.3839225e-7, -0.212, 1.7976)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (2.420328e-8, 0.7071081, -0.70710546, -2.4203189e-8)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.04
+            custom float urdf:dynamics:damping = 0.3
+            custom float urdf:dynamics:friction = 0
+            custom float urdf:limit:effort = 100
+            custom float urdf:limit:velocity = 0.2
+        }
+
+        def PhysicsFixedJoint "world_cell_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link>
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "robot_base_plate_link_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link>
+            point3f physics:localPos0 = (0, -0.3, 0.93)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link0_accelerometer_top_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link0_accelerometer_top>
+            point3f physics:localPos0 = (0.0078720655, -0.31740198, 0.97715)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.0000025973434, 0.70710546, 0.7071081, -0.0000025973532)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link0_accelerometer_bottom_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link0_accelerometer_bottom>
+            point3f physics:localPos0 = (-0.0015505261, -0.319739, 0.98075)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link1_accelerometer_top_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link1_accelerometer_top>
+            point3f physics:localPos0 = (0.09335194, -0.28259766, 1.25513)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.50000185, 0.5000037, -0.49999815, 0.4999963)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link1_accelerometer_bottom_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link1_accelerometer_bottom>
+            point3f physics:localPos0 = (0.089749925, -0.28025967, 1.26455)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.0000039365054, 0.70710677, 0.0000013234026, -0.70710677)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link2_accelerometer_top_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link2_accelerometer_top>
+            point3f physics:localPos0 = (-0.007870069, -0.28259704, 1.38015)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.0000012739371, 0.7071081, -0.70710546, 0.0000039207544)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link2_accelerometer_bottom_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link2_accelerometer_bottom>
+            point3f physics:localPos0 = (0.001549922, -0.280263, 1.38175)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.0000037193167, -1.7118866e-8, 0.0000018477429, 1)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link3_accelerometer_top_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link3_accelerometer_top>
+            point3f physics:localPos0 = (-0.077352256, -0.2349013, 1.57113)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.49999812, 0.5, 0.50000185, -0.5)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link3_accelerometer_bottom_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link3_accelerometer_bottom>
+            point3f physics:localPos0 = (-0.07375625, -0.23723127, 1.58055)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710677, -0.0000013234026, 0.70710677, -0.0000012897004)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link4_accelerometer_top_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link4_accelerometer_top>
+            point3f physics:localPos0 = (-0.007870074, -0.28260002, 1.625252)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.00000392075, 0.7071081, -0.70710546, 0.0000012739517)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link4_accelerometer_bottom_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link4_accelerometer_bottom>
+            point3f physics:localPos0 = (0.001549917, -0.280275, 1.628753)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.0000037193167, 1.7118866e-8, -0.0000018477429, 1)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link5_accelerometer_top_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link5_accelerometer_top>
+            point3f physics:localPos0 = (-0.085871935, -0.31736332, 1.95505)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.49999812, 0.5, 0.50000185, -0.5)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_link5_accelerometer_bottom_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link5_accelerometer_bottom>
+            point3f physics:localPos0 = (-0.08227492, -0.31974232, 1.96446)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710677, -0.0000013234026, 0.70710677, -0.0000012897004)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_joint8"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8>
+            point3f physics:localPos0 = (-3.3439437e-7, -0.212, 1.856)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-2.4203189e-8, 0.70710546, 0.7071081, -2.420328e-8)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_hand_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand>
+            point3f physics:localPos0 = (-3.3439437e-7, -0.212, 1.856)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-2.4203189e-8, 0.70710546, 0.7071081, -2.420328e-8)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "fr3_hand_tcp_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0/fr3_link1/fr3_link2/fr3_link3/fr3_link4/fr3_link5/fr3_link6/fr3_link7/fr3_link8/fr3_hand/fr3_hand_tcp>
+            point3f physics:localPos0 = (-3.3439437e-7, -0.212, 1.856)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-2.4203189e-8, 0.70710546, 0.7071081, -2.420328e-8)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "franka_to_plate_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/robot_base_plate_link/fr3_link0>
+            point3f physics:localPos0 = (0, -0.3, 0.93)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710546, 0, 0, 0.7071081)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame>
+            point3f physics:localPos0 = (0.65, 0.65, 2)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, -0.35355338, 0.8535534, 0.14644662)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_link_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link>
+            point3f physics:localPos0 = (0.6385756, 0.66332436, 1.9836658)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, -0.35355338, 0.8535534, 0.14644662)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_depth_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_depth_frame>
+            point3f physics:localPos0 = (0.6385756, 0.66332436, 1.9836658)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, -0.35355338, 0.8535534, 0.14644662)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_depth_optical_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_depth_frame/camera1_depth_optical_frame>
+            point3f physics:localPos0 = (0.6385756, 0.66332436, 1.9836658)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, 0.8535534, -0.35355338, -0.14644663)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_infra1_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_infra1_frame>
+            point3f physics:localPos0 = (0.6385756, 0.66332436, 1.9836658)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, -0.35355338, 0.8535534, 0.14644662)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_infra1_optical_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_infra1_frame/camera1_infra1_optical_frame>
+            point3f physics:localPos0 = (0.6385756, 0.66332436, 1.9836658)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, 0.8535534, -0.35355338, -0.14644663)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_infra2_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_infra2_frame>
+            point3f physics:localPos0 = (0.67393094, 0.627969, 1.9836658)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, -0.35355338, 0.8535534, 0.14644662)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_infra2_optical_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_infra2_frame/camera1_infra2_optical_frame>
+            point3f physics:localPos0 = (0.67393094, 0.627969, 1.9836658)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, 0.8535534, -0.35355338, -0.14644663)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_color_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_color_frame>
+            point3f physics:localPos0 = (0.627969, 0.67393094, 1.9836658)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, -0.35355338, 0.8535534, 0.14644662)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera1_color_optical_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera1_bottom_screw_frame/camera1_link/camera1_color_frame/camera1_color_optical_frame>
+            point3f physics:localPos0 = (0.627969, 0.67393094, 1.9836658)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.35355338, 0.8535534, -0.35355338, -0.14644663)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame>
+            point3f physics:localPos0 = (-0.65, 0.65, 2)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.8535534, 0.1464466, 0.35355335, -0.35355335)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_link_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link>
+            point3f physics:localPos0 = (-0.6260756, 0.65082437, 2.0013435)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.8535534, 0.1464466, 0.35355335, -0.35355335)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_depth_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_depth_frame>
+            point3f physics:localPos0 = (-0.6260756, 0.65082437, 2.0013435)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.8535534, 0.1464466, 0.35355335, -0.35355335)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_depth_optical_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_depth_frame/camera2_depth_optical_frame>
+            point3f physics:localPos0 = (-0.6260756, 0.65082437, 2.0013435)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.14644665, -0.3535534, 0.85355335, -0.3535534)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_infra1_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_infra1_frame>
+            point3f physics:localPos0 = (-0.6260756, 0.65082437, 2.0013435)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.8535534, 0.1464466, 0.35355335, -0.35355335)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_infra1_optical_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_infra1_frame/camera2_infra1_optical_frame>
+            point3f physics:localPos0 = (-0.6260756, 0.65082437, 2.0013435)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.14644665, -0.3535534, 0.85355335, -0.3535534)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_infra2_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_infra2_frame>
+            point3f physics:localPos0 = (-0.66143095, 0.61546904, 2.0013435)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.8535534, 0.1464466, 0.35355335, -0.35355335)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_infra2_optical_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_infra2_frame/camera2_infra2_optical_frame>
+            point3f physics:localPos0 = (-0.66143095, 0.61546904, 2.0013435)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.14644665, -0.3535534, 0.85355335, -0.3535534)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_color_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_color_frame>
+            point3f physics:localPos0 = (-0.61546904, 0.66143095, 2.0013435)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.8535534, 0.1464466, 0.35355335, -0.35355335)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera2_color_optical_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </techtory_franka>
+            custom rel physics:body1
+            prepend rel physics:body1 = </techtory_franka/Geometry/world/cell_link/camera2_bottom_screw_frame/camera2_link/camera2_color_frame/camera2_color_optical_frame>
+            point3f physics:localPos0 = (-0.61546904, 0.66143095, 2.0013435)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.14644665, -0.3535534, 0.85355335, -0.3535534)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+    }
+}
+

@@ -504,6 +504,40 @@
     <child link="fr3_link0"/>
     <origin rpy="0 0 1.5708" xyz="0 0 0"/>
   </joint>
+  <material name="aluminum">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  <material name="plastic">
+    <color rgba="0.1 0.1 0.1 1"/>
+  </material>
+  <!-- camera body, with origin at bottom screw mount -->
+  <joint name="camera1_joint" type="fixed">
+    <origin rpy="0 2.356194490192345 0.7853981633974483" xyz="0.65 0.65 2.0"/>
+    <parent link="cell_link"/>
+    <child link="camera1_bottom_screw_frame"/>
+  </joint>
+  <link name="camera1_bottom_screw_frame"/>
+  <joint name="camera1_link_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.010600000000000002 0.0175 0.0125"/>
+    <parent link="camera1_bottom_screw_frame"/>
+    <child link="camera1_link"/>
+  </joint>
+  <link name="camera1_link">
+  </link>
+
+  <joint name="camera2_joint" type="fixed">
+    <origin rpy="0 0.7853981633974483 -0.7853981633974483" xyz="-0.65 0.65 2.0"/>
+    <parent link="cell_link"/>
+    <child link="camera2_bottom_screw_frame"/>
+  </joint>
+  <link name="camera2_bottom_screw_frame"/>
+  <joint name="camera2_link_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.010600000000000002 0.0175 0.0125"/>
+    <parent link="camera2_bottom_screw_frame"/>
+    <child link="camera2_link"/>
+  </joint>
+  <link name="camera2_link">
+  </link>
   <ros2_control name="techtory_franka_ros2_control" type="system">
     <hardware>
       <plugin>mock_components/GenericSystem</plugin>
@@ -557,7 +591,7 @@
       </state_interface>
       <state_interface name="velocity"/>
     </joint>
-    <!-- Hand joints if needed -->
+    <!-- Hand joints -->
     <joint name="fr3_finger_joint1">
       <command_interface name="position"/>
       <state_interface name="position">
@@ -565,28 +599,12 @@
       </state_interface>
       <state_interface name="velocity"/>
     </joint>
+    <!-- finger_joint2 mimics finger_joint1 — mimic joints must not have command interfaces -->
     <joint name="fr3_finger_joint2">
-      <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>
       </state_interface>
       <state_interface name="velocity"/>
     </joint>
   </ros2_control>
-  <!-- Dummy Camera -->
-  <link name="camera_link">
-    <visual>
-      <geometry>
-        <box size="0.05 0.05 0.05"/>
-      </geometry>
-      <material name="black">
-        <color rgba="0 0 0 1"/>
-      </material>
-    </visual>
-  </link>
-  <joint name="camera_joint" type="fixed">
-    <parent link="cell_link"/>
-    <child link="camera_link"/>
-    <origin rpy="0 1.5707963267948966 0" xyz="0.5 0 1.5"/>
-  </joint>
 </robot>
