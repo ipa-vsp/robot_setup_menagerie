@@ -22,6 +22,12 @@ pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cu130
 pip install isaacsim[all,extscache]==6.0.0 --extra-index-url https://pypi.nvidia.com
 ```
 
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install isaacsim[all,extscache]==5.1.0 --extra-index-url https://pypi.nvidia.com
+```
+
 ### Workspace Setup
 
 1. Create a workspace directory:
