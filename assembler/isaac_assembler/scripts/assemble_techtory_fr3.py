@@ -31,7 +31,7 @@ def main():
     stage = world.scene.stage
 
     # Positions for Fr3 in Techtory workcell
-    robot_spawn_position = np.array([0.61, 0.27, 0.9])
+    robot_spawn_position = np.array([-0.2, -0.7, 0.9])
     robot_rotation_deg = np.array([0.0, 0.0, 90.0])
 
     # Build the scene
